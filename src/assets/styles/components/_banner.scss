@@ -1,0 +1,38 @@
+.banner {
+    position: relative;
+    display: grid;
+    margin-bottom: $spacing-lg;
+
+
+    &__photo {
+        width: 100%;
+        height: auto;
+        border-radius: $spacing-sm;
+        justify-self: center;
+    }
+
+    &__title {
+        bottom: 0;
+        width: 100%;
+        position: absolute;
+        color: $color-white;
+        text-shadow: 1px 2px 3px $color-dark-orange;
+        justify-self: center;
+        padding: 0 $spacing-lg;
+
+        @media (max-width: 767px) {
+            position: relative;
+            color: $color-dark-orange;
+            font-size: $spacing-md;
+            text-shadow: none;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            font-size: $spacing-lg;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: $spacing-xl;
+        }
+    }
+}

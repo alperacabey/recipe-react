@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: $box-shadow;
+  border-radius: $spacing-sm;
+  background-color: $color-white;
+  max-width: 350px;
+  margin: $spacing-xl;
+  text-decoration: none;
+
+  &__title {
+    font-size: 18px;
+    font-weight: normal;
+    white-space: break-spaces;
+    color: $color-black;
+    margin: $spacing-lg;
+  }
+
+  &__photo {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    display: inline-block;
+    border-radius: $spacing-sm $spacing-sm 0 0;
+  }
+
+  &:hover {
+    filter: drop-shadow(0 0 2em $color-light-green);
+  }
+}

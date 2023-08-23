@@ -1,0 +1,27 @@
+@import "variables";
+
+//components
+@import "components/_banner";
+@import "components/_card";
+@import "components/_container";
+
+//pages
+@import "pages/recipe-detail";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  width: 100vw;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-gray;
+}

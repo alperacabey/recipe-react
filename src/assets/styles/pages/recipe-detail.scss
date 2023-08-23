@@ -1,0 +1,16 @@
+.recipe-detail {
+    &__tag-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__tag {
+        background-color: $color-orange;
+        color: $color-dark-orange;
+        border-radius: $spacing-sm;
+        padding: $spacing-xs $spacing-sm;
+        margin-right: $spacing-sm;
+        font-size: $spacing-md;
+        font-weight: 600;
+    }
+}
